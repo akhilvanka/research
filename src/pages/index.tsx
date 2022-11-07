@@ -16,8 +16,8 @@ export default function Home() {
 			</div>
 			<div
 				className='text-neutral-500'>
-				here's a collection of the stuff i'm currently researching, from quantitative finance to machine learning to computer vision. 
-				it's all here.
+				here&apos;s a collection of the stuff i&apos;m currently researching, from quantitative finance to machine learning to computer vision. 
+				it&apos;s all here.
 			</div>
 			<ul className="space-y-1 list-inside">
 				{posts

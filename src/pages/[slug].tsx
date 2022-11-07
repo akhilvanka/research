@@ -26,7 +26,7 @@ export default function PostPage({slug}: Props) {
 
 			{post.hidden && (
 				<div className="bg-yellow-500 text-yellow-900 rounded-md py-2 px-4">
-					<p>hey! this post is hidden! please don't share the link for now...</p>
+					<p>hey! this post is hidden! please don&apos;t share the link for now...</p>
 				</div>
 			)}
 
