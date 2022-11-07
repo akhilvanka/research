@@ -3,9 +3,9 @@ import Link from 'next/link';
 import type {ReactNode} from 'react';
 import {posts} from '../posts';
 
-// export const config: PageConfig = {
-// 	unstable_runtimeJS: false,
-// };
+export const config: PageConfig = {
+	unstable_runtimeJS: false,
+};
 
 export default function Home() {
 	return (
