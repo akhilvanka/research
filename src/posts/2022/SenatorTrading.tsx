@@ -40,7 +40,7 @@ export class SenatorTrading extends Post {
 				<SenateGraph />
 				<p>
 					Okay, my favorite not-favorite part. This is a plotly graph of the value of the senator&apos;s portfolios. I took the all-time data from <a className='text-neutral-700 no-underline hover:text-[#D1C9BC]' href='yahoo.finance.com'>yahoo.finance</a> and 
-					then I used the data from the Senate website to calculate the value of the portfolios. Now, you might be asking. Is this accurate? Well, good question. No. It&apos;s not. Don't even think about it.
+					then I used the data from the Senate website to calculate the value of the portfolios. Now, you might be asking. Is this accurate? Well, good question. No. It&apos;s not. Don&apos;t even think about it.
 					Not only is it making soooo many assumptions, it&apos;s also could just be plain wrong. But, it&apos;s a good way to see how the senators are doing. I mean, I guess. I don&apos;t know. I&apos;m not a financial advisor.
 					I mentioned assumptions, so here they are. 
 				</p>
@@ -52,7 +52,7 @@ export class SenatorTrading extends Post {
 					With the broad price range given, it&apos;s the lower value <br />
 				</p>
 				<p>
-					There&apos;s a lot more, but those are the main ones. But hey, at least it's something. It was fun while I was making it, and it&apos;s only the starting.
+					There&apos;s a lot more, but those are the main ones. But hey, at least it&apos;s something. It was fun while I was making it, and it&apos;s only the starting.
 					If you want to see the code for anything on this website, go swing by my github at <a className='text-neutral-700 no-underline hover:text-[#D1C9BC]' href='https://github.com/akhilvanka'>@akhilvanka</a>.
 					That&apos;s it for now. I&apos;ll be back with more soon.
 				</p>
