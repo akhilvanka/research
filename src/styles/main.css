@@ -1,0 +1,31 @@
+:root {
+    color-scheme: dark;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D1C9BC;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aca59c;
+}
+
+body {
+	@apply bg-[#1E1E1E] text-[#D1C9BC] dark:bg-[#1E1E1E] dark:text-[#D1C9BC] font-mono font-light;
+}
+
+.no-pre-margin pre {
+	margin: 0;
+}
+
