@@ -4,7 +4,7 @@ import { SenateGraph } from '../../client/components/senate_graph';
 
 export class SenatorTrading extends Post {
 	public name = 'The Senate Conundrum';
-	public slug = 'sentate-trading';
+	public slug = 'senate-trading';
 	public date = new Date('31 Oct 2022');
 	public hidden = false;
 	public excerpt = 'How I found Senators trading and used it to build a algorithmic trading bot';
