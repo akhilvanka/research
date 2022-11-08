@@ -2,7 +2,7 @@
 import "tailwindcss/tailwind.css"; 
 import "../styles/main.css";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import React from "react";
 import Head from "next/head";
@@ -11,10 +11,12 @@ import type { AppProps } from "next/app";
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <div>
+      <AnimatePresence>
 		<motion.div
 			key={router.route}
 			initial="initial"
 			animate="animate"
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
 			variants={{
 			  initial: {
 				opacity: 0,
@@ -22,7 +24,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
 		  	animate: {
 				opacity: 1,
 		  	}}}
-			transition={{ delay: 0.3 }}>
+			transition={{ delay: 0.4 }}>
         <div className="px-4 md:px-16 space-y-24 py-24 max-w-7xl">
           <Head>
             <title>research</title>
@@ -50,6 +52,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
           </footer>
         </div>
       </motion.div>
+      </AnimatePresence>
     </div>
   );
 }
