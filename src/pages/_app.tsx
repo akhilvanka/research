@@ -8,9 +8,11 @@ import React from "react";
 import Head from "next/head";
 import type { AppProps } from "next/app";
 
+
 export default function App({ Component, pageProps, router }: AppProps) {
   return (
     <div>
+      <AnimatePresence>
 		<motion.div
 			key={router.route}
 			initial="initial"
@@ -51,6 +53,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
           </footer>
         </div>
       </motion.div>
+    </AnimatePresence>
     </div>
   );
 }

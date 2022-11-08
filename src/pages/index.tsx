@@ -1,7 +1,10 @@
-import type {PageConfig} from 'next';
-import Link from 'next/link';
+import dynamic from 'next/dynamic';
+// import Link from 'next/link';
 import type {ReactNode} from 'react';
 import {posts} from '../posts';
+
+const Link = dynamic(() => import('next/link'));
+
 
 // export const config: PageConfig = {
 // 	unstable_runtimeJS: false,

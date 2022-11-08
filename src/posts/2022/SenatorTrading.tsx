@@ -1,6 +1,9 @@
+import dynamic from 'next/dynamic';
+
 import { Post } from '../Post';
-import { SenateTable } from '../../client/components/senate_table';
-import { SenateGraph } from '../../client/components/senate_graph';
+const SenateTable = dynamic(() => import('../../client/components/senate_table').then((mod) => mod.SenateTable))
+const SenateGraph = dynamic(() => import('../../client/components/senate_graph').then((mod) => mod.SenateGraph), { ssr: false })
+
 
 export class SenatorTrading extends Post {
 	public name = 'The Senate Conundrum';
