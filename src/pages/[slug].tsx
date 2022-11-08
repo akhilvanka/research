@@ -4,9 +4,9 @@ import Link from 'next/link';
 import {posts} from '../posts';
 import { ReaderMode } from '../client/components/reader_mode';
 
-export const config: PageConfig = {
-	unstable_runtimeJS: false,
-};
+// export const config: PageConfig = {
+// 	unstable_runtimeJS: false,
+// };
 
 type Props = {
 	slug: string;
