@@ -5,6 +5,9 @@ export default class BlogDocument extends Document {
 		return (
 			<Html>
 				<Head>
+					<link rel="manifest" href="/manifest.json" />
+					<link rel="apple-touch-icon" href="/icon-192x192.png" />
+					<meta name="theme-color" content="#D1C9BC" />
 					<link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin='true'/>
 					<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true'/>
 					<link

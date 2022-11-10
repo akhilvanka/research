@@ -1,8 +1,9 @@
 import dynamic from 'next/dynamic';
-
+// import React, {useEffect, useRef, useState, useMemo} from 'react';
 import { Post } from '../Post';
 const SenateTable = dynamic(() => import('../../client/components/senate_table').then((mod) => mod.SenateTable))
 const SenateGraph = dynamic(() => import('../../client/components/senate_graph').then((mod) => mod.SenateGraph), { ssr: false })
+
 
 
 export class SenatorTrading extends Post {
@@ -40,7 +41,9 @@ export class SenatorTrading extends Post {
 					responds with a JSON of all the data. Then it&apos;s really, really easy to handle it client side.
 				</p>
 				<h2>Portolfio Values</h2>
-				<SenateGraph />
+				<div>
+					{<SenateGraph />}
+				</div>
 				<p>
 					Okay, my favorite not-favorite part. This is a plotly graph of the value of the senator&apos;s portfolios. I took the all-time data from <a className='text-neutral-700 no-underline hover:text-[#D1C9BC]' href='yahoo.finance.com'>yahoo.finance</a> and 
 					then I used the data from the Senate website to calculate the value of the portfolios. Now, you might be asking. Is this accurate? Well, good question. No. It&apos;s not. Don&apos;t even think about it.
